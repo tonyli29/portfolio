@@ -1,19 +1,49 @@
+* {
+  font-family: "Questrial", sans-serif;
+}
 .block-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 1px;
-  height: 600px;
+  position: absolute;
+  width: 100%;
 }
 .big-block {
   text-align: center;
-  background: blue;
+  background: rgba(146, 156, 170, 0);
+  padding: 250px;
+  border-top: 1px solid white;
+}
+.big-block-hovered {
+  text-align: center;
+  background: rgba(146, 156, 170, 0.2);
+  padding: 250px;
+  border-top: 1px solid white;
 }
 .block-section {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  grid-gap: 1px;
 }
 .block {
-  background-color: red;
+  background-color: rgba(146, 156, 170, 0);
+  text-align: center;
+  padding-top: 116px;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+}
+.block-hovered {
+  background-color: rgba(146, 156, 170, 0.2);
+  text-align: center;
+  padding-top: 116px;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+}
+.big-block span {
+  top: 50%;
+}
+.background {
+  position: absolute;
+  width: 100%;
+  max-height: 518px;
 }

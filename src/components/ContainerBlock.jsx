@@ -16,10 +16,21 @@ const ContainerBlock = props => {
       catagorie: "Placeholder"
     }
   ]);
+  const [hovered, setHovered] = useState(false);
+  const toggleHover = () => {
+    setHovered(!hovered);
+    if (hovered) {
+      console.log("gg");
+    }
+  };
 
   return (
     <div className="block-container">
-      <div className="big-block">
+      <div
+        onMouseEnter={() => toggleHover()}
+        onMouseLeave={() => toggleHover()}
+        className={hovered ? "big-block-hovered" : "big-block"}
+      >
         <span>Tony Li</span>
       </div>
       <div className="block-section">
