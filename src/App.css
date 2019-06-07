@@ -3,7 +3,7 @@
 }
 .block-container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 720px 720px;
   grid-gap: 1px;
   position: absolute;
   width: 100%;
@@ -44,6 +44,6 @@
 }
 .background {
   position: absolute;
-  width: 100%;
+  width: 1440px;
   max-height: 518px;
 }
