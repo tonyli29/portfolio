@@ -15,7 +15,7 @@ const Block = props => {
       onMouseLeave={() => toggleHover()}
       className={hovered ? "block-hovered" : "block"}
     >
-      <span>{props.catagorie}</span>
+      <span id={props.catagorie}>{props.catagorie}</span>
     </div>
   );
 };

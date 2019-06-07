@@ -26,12 +26,22 @@ const ContainerBlock = props => {
 
   return (
     <div className="block-container">
-      <div
-        onMouseEnter={() => toggleHover()}
-        onMouseLeave={() => toggleHover()}
-        className={hovered ? "big-block-hovered" : "big-block"}
-      >
-        <span>Tony Li</span>
+      <div className="big-block">
+        <div className="info-box">
+          <h1>Tony Li</h1>
+          <button>Contact</button>
+          <button>Resume</button>
+          <div className="social-buttons">
+            <img
+              className="social"
+              src={require("../images/GitHub-Mark-Light-120px-plus.png")}
+            />
+            <img
+              className="social"
+              src={require("../images/In-White-128.png")}
+            />
+          </div>
+        </div>
       </div>
       <div className="block-section">
         {" "}

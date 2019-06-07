@@ -1,5 +1,6 @@
 * {
   font-family: "Questrial", sans-serif;
+  color: white;
 }
 .block-container {
   display: grid;
@@ -27,23 +28,46 @@
 }
 .block {
   background-color: rgba(146, 156, 170, 0);
-  text-align: center;
-  padding-top: 116px;
   border-left: 1px solid white;
   border-top: 1px solid white;
+  font-size: 2em;
+  position: relative;
+}
+.block span {
+  position: absolute;
+  width: 100%;
+  text-align: center;
 }
 .block-hovered {
   background-color: rgba(146, 156, 170, 0.2);
-  text-align: center;
-  padding-top: 116px;
   border-left: 1px solid white;
   border-top: 1px solid white;
+  font-size: 2em;
+  position: relative;
 }
-.big-block span {
+.block-hovered span {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+}
+#Contact,
+#Placeholder {
+  padding-top: 40px;
+}
+#Project,
+#Technologies {
+  bottom: 0;
+  padding-bottom: 40px;
+}
+.info-box {
   top: 50%;
 }
 .background {
   position: absolute;
   width: 1440px;
-  max-height: 518px;
+  max-height: 643.875px;
+}
+.social {
+  height: 25px;
+  padding: 10px 5px;
 }
