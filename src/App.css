@@ -1,19 +1,26 @@
 * {
-  font-family: "Questrial", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
   color: white;
+}
+.main-container {
+  color: black;
 }
 .block-container {
   display: grid;
-  grid-template-columns: 720px 720px;
+  grid-template-columns: 1fr 1fr;
   grid-gap: 1px;
-  position: absolute;
+  /* position: absolute; */
   width: 100%;
+  z-index: -2;
+  background-image: url(./images/donald-giannatti-671274-unsplash.jpg);
+  background-size: cover;
+  background-position: bottom;
 }
 .big-block {
   text-align: center;
   background: rgba(146, 156, 170, 0);
-  padding: 250px;
-  border-top: 1px solid white;
+  padding: 180px;
 }
 .big-block-hovered {
   text-align: center;
@@ -26,17 +33,32 @@
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
 }
+.testimage {
+  display: block;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  object-fit: cover;
+  /* border-left: 1px solid rgba(255, 255, 255, 0.3);
+  border-top: 1px solid rgba(255, 255, 255, 0.3); */
+  transition: 0.5s;
+}
 .block {
-  background-color: rgba(146, 156, 170, 0);
-  border-left: 1px solid white;
-  border-top: 1px solid white;
+  border-left: 1px solid rgba(255, 255, 255, 0.4);
+  border-top: 1px solid rgba(255, 255, 255, 0.4);
   font-size: 2em;
   position: relative;
+  display: block;
 }
+.block:hover .testimage {
+  opacity: 1;
+}
+
 .block span {
   position: absolute;
   width: 100%;
   text-align: center;
+  z-index: -1;
 }
 .block-hovered {
   background-color: rgba(146, 156, 170, 0.2);
@@ -50,14 +72,20 @@
   width: 100%;
   text-align: center;
 }
+.Project-block,
+.Technologies-block {
+  border-top: none;
+}
 #Contact,
 #Placeholder {
   padding-top: 40px;
+  z-index: 100;
 }
 #Project,
 #Technologies {
   bottom: 0;
   padding-bottom: 40px;
+  z-index: 100;
 }
 .info-box {
   top: 50%;
@@ -69,5 +97,35 @@
 }
 .social {
   height: 25px;
-  padding: 10px 5px;
+  margin: 10px 10px;
+}
+.contact-button {
+  margin: 1px;
+  margin-bottom: 10px;
+  padding: 10px 20px;
+  background-color: rgb(77, 184, 255);
+  /* border: 1px solid rgba(255, 255, 255, 0.4); */
+
+  transition: 0.5s;
+}
+.contact-button:focus {
+  outline: none;
+}
+.contact-button:hover {
+  border: 1px solid transparent;
+  color: rgb(77, 184, 255);
+  background-color: rgb(255, 255, 255);
+}
+/* .bottom {
+  margin-top: 600px;
+  color: black;
+
+  background-color: red;
+  display: inline-block;
+  width: 100%;
+  float: left;
+  text-align: left;
+} */
+.hovered span {
+  opacity: 0;
 }
