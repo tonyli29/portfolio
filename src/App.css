@@ -3,7 +3,16 @@
   font-weight: 300;
   color: white;
 }
+body {
+  /* background-color: rgb(242, 242, 242); */
+  background-color: rgba(0, 0, 0, 0.07);
+  /* background-color: rgb(77, 184, 255); */
+
+  margin: 0;
+}
 .main-container {
+  display: grid;
+  grid-template-rows: 100px 1fr;
   color: black;
 }
 .block-container {
@@ -13,9 +22,10 @@
   /* position: absolute; */
   width: 100%;
   z-index: -2;
-  background-image: url(./images/donald-giannatti-671274-unsplash.jpg);
+  /* background-image: url(./images/donald-giannatti-671274-unsplash.jpg); */
+  background-image: url(./images/buildings-near-body-of-water-at-night-1519088.jpg);
   background-size: cover;
-  background-position: bottom;
+  background-position-y: 0%;
 }
 .big-block {
   text-align: center;
@@ -46,6 +56,8 @@
 .block {
   border-left: 1px solid rgba(255, 255, 255, 0.4);
   border-top: 1px solid rgba(255, 255, 255, 0.4);
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 100%;
   font-size: 2em;
   position: relative;
   display: block;
@@ -99,33 +111,142 @@
   height: 25px;
   margin: 10px 10px;
 }
-.contact-button {
-  margin: 1px;
+.button {
   margin-bottom: 10px;
-  padding: 10px 20px;
+  padding: 9px 19px;
   background-color: rgb(77, 184, 255);
+  font-size: 11px;
+  text-decoration: none;
   /* border: 1px solid rgba(255, 255, 255, 0.4); */
-
+  border: 1px solid rgb(77, 184, 255);
   transition: 0.5s;
 }
-.contact-button:focus {
+.button:focus {
   outline: none;
 }
-.contact-button:hover {
+.button:hover {
   border: 1px solid transparent;
   color: rgb(77, 184, 255);
   background-color: rgb(255, 255, 255);
 }
-/* .bottom {
-  margin-top: 600px;
-  color: black;
 
-  background-color: red;
-  display: inline-block;
-  width: 100%;
-  float: left;
-  text-align: left;
-} */
 .hovered span {
   opacity: 0;
+}
+
+.top-container,
+.top-right {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: center;
+}
+.top-container {
+  border-left: 1px solid rgba(255, 255, 255, 0.4);
+  margin: 0;
+}
+.top-project {
+  border-right: 1px solid rgba(255, 255, 255, 0.4);
+}
+.top-right {
+  border-left: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.filler {
+  margin: 8px 0px;
+  color: black;
+}
+
+/* Not home page css anymore */
+.project-block {
+  padding: 0;
+  height: 583px;
+}
+.project-container {
+  background-color: rgb(20, 20, 20);
+  background-image: none;
+  grid-template-columns: 0.7fr 1fr;
+  border-right: 1px solid rgba(255, 255, 255, 0.4);
+  border-left: 1px solid rgba(255, 255, 255, 0.4);
+  grid-gap: 0;
+}
+li {
+  list-style: none;
+  margin-bottom: 20px;
+}
+ul {
+  padding: 0;
+  margin: 24px;
+}
+p {
+  margin: 0 40px;
+  line-height: 1.8em;
+}
+.project-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+.project-tools {
+  border-right: 1px solid rgba(255, 255, 255, 0.4);
+}
+.project-description {
+  border-right: 1px solid rgba(255, 255, 255, 0.4);
+}
+.project-info {
+  text-align: center;
+  border-left: 1px solid rgba(255, 255, 255, 0.4);
+  display: grid;
+  grid-template-rows: 0.2fr 1fr;
+}
+.project-info-grid {
+  display: grid;
+  grid-template-columns: 0.5fr 2fr 0.5fr;
+}
+.project-features {
+  margin-right: 0px;
+}
+.project-title h1 {
+  margin: 40px;
+}
+.app-buttons a {
+  display: inline-block;
+  margin: 15px;
+}
+.project-head {
+  display: grid;
+  grid-template-columns: 0.7fr 1fr;
+  text-align: center;
+  border-left: 1px solid rgba(255, 255, 255, 0.4);
+}
+.project-head a {
+  text-decoration: none;
+}
+.home-button {
+  padding: 8px 0;
+  color: white;
+  transition: 0.5s;
+  background-color: rgb(77, 184, 255);
+  border-bottom: 1px solid white;
+  border-top: 1px solid white;
+  border-left: 1px solid white;
+  text-decoration: none;
+}
+.home-button:hover {
+  background-color: white;
+  color: rgb(77, 184, 255);
+}
+.blank-space {
+  border-left: 1px solid white;
+  background-color: rgb(20, 20, 20);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  margin-right: -2px;
+}
+#algov {
+  height: 300px;
+  margin-top: 60px;
+}
+#house {
+  height: 300px;
+  margin-top: 60px;
 }

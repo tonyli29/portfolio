@@ -1,24 +1,32 @@
 import React, { useState } from "react";
 import Block from "./block";
 import Bottom from "./Bottom";
+import Top from "./Top";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 const ContainerBlock = props => {
   const [catagorie, setCatagorie] = useState([
     {
       catagorie: "Project",
-      image: "../images/download.png"
+      title: "AlgoV",
+      param: "algov",
+      image: "algoProject.jpeg"
     },
     {
       catagorie: "Technologies",
-      image: "../images/GitHub-Mark-120px-plus.png"
+      title: "placehjoplder",
+      image: "algoProject.jpeg"
     },
     {
       catagorie: "Contact",
-      image: "../images/GitHub-Mark-120px-plus.png"
+      param: "realestateapp",
+      title: "RealEstate App",
+      image: "house.png"
     },
     {
       catagorie: "Placeholder",
-      image: "../images/GitHub-Mark-120px-plus.png"
+      title: "Project: AlgoV",
+      image: "algoProject.jpeg"
     }
   ]);
   const [hoveredL, setHoveredL] = useState(false);
@@ -31,14 +39,17 @@ const ContainerBlock = props => {
   };
 
   return (
-    <div>
+    <div className="container">
+      <Top></Top>
       <div className="block-container">
         <div className="big-block">
           <div className="info-box">
             <div className="header">
               <h1>Tony Li</h1>
-              <h2>Student</h2>
-              <button className="contact-button">Resume</button>
+              <p>litony1999@gmail.com</p>
+              <p>416-668-1415</p>
+              <h2>Student | Developer</h2>
+              <button className="button contact-button">Resume</button>
               <div className="social-buttons">
                 <a href="https://github.com/tonyli29" target="_blank">
                   <img
@@ -71,10 +82,16 @@ const ContainerBlock = props => {
             </div>
           </div>
         </div>
+
         <div className="block-section">
-          {" "}
           {catagorie.map(block => (
-            <Block catagorie={block.catagorie} image={block.image} />
+            <Link to={`/${block.param}`}>
+              <Block
+                catagorie={block.catagorie}
+                image={block.image}
+                title={block.title}
+              />
+            </Link>
           ))}
         </div>
       </div>

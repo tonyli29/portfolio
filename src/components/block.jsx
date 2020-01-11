@@ -17,10 +17,10 @@ const Block = props => {
           : `block ${props.catagorie}-block`
       }
     >
-      <span id={props.catagorie}>{props.catagorie}</span>
+      <span id={props.catagorie}>{props.title}</span>
       <img
         className="testimage"
-        src={require("../images/algoProject.jpeg")}
+        src={require("../images/" + props.image)}
       ></img>
     </div>
   );
