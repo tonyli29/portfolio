@@ -49,7 +49,16 @@ const House = props => {
             </div>
             <div className="project-description">
               <h2>Overview</h2>
-              <p></p>
+              <p>
+                Fullstack website that displays a grid of user inputed houses
+                and their details and location. Location is displayed with
+                google geocoding and maps api. App uses token authentication to
+                verify users, and features private routes that can only be
+                accessed by registered accounts. App also includes error
+                handling that is specfic to the type of error occuring.
+                Registered users can add, delete, and update their own houses,
+                which are stored in a SQLite3 database
+              </p>
             </div>
             <div className="project-features">
               <h2>Features</h2>
@@ -57,7 +66,7 @@ const House = props => {
                 <li>Authentication</li>
                 <li>Add/Delete Houses</li>
                 <li>Google maps api</li>
-                <li></li>
+                <li>Error handling</li>
                 <li>REST API</li>
               </ul>
             </div>
