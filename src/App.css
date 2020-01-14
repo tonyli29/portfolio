@@ -263,15 +263,23 @@ p {
   .top-container {
     display: none;
   }
+
   .Project-block,
   .Technologies-block {
     border-top: 1px solid rgba(255, 255, 255, 0.4);
+  }
+  .Project-block,
+  .Contact-block {
+    border-left: none;
   }
 }
 @media only screen and (max-width: 650px) {
   .block-container {
     grid-template-rows: 1fr;
     grid-template-columns: 1fr;
+  }
+  .block {
+    border-left: none;
   }
   .top-container {
     display: none;
