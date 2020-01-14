@@ -250,3 +250,7 @@ p {
   height: 300px;
   margin-top: 60px;
 }
+#resume-button {
+  margin: 15px;
+  display: inline-block;
+}

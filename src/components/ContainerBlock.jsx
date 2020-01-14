@@ -3,6 +3,7 @@ import Block from "./block";
 import Bottom from "./Bottom";
 import Top from "./Top";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import resume from "../Resume/ResumePortfolio.pdf";
 
 const ContainerBlock = props => {
   const [catagorie, setCatagorie] = useState([
@@ -14,8 +15,8 @@ const ContainerBlock = props => {
     },
     {
       catagorie: "Technologies",
-      title: "placehjoplder",
-      image: "algoProject.jpeg"
+      title: "Placeholder",
+      image: "coming-soon.jpg"
     },
     {
       catagorie: "Contact",
@@ -25,8 +26,8 @@ const ContainerBlock = props => {
     },
     {
       catagorie: "Placeholder",
-      title: "Project: AlgoV",
-      image: "algoProject.jpeg"
+      title: "Placeholder",
+      image: "coming-soon.jpg"
     }
   ]);
   const [hoveredL, setHoveredL] = useState(false);
@@ -49,7 +50,10 @@ const ContainerBlock = props => {
               <p>litony1999@gmail.com</p>
               <p>416-668-1415</p>
               <h2>Student | Developer</h2>
-              <button className="button contact-button">Resume</button>
+              <a id="resume-button" className="button" href={resume} download>
+                Resume
+              </a>
+
               <div className="social-buttons">
                 <a href="https://github.com/tonyli29" target="_blank">
                   <img
