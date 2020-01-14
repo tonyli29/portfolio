@@ -265,3 +265,19 @@ p {
     border-top: 1px solid rgba(255, 255, 255, 0.4);
   }
 }
+@media only screen and (max-width: 650px) {
+  .block-container {
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+  }
+  .project-container {
+    grid-template-rows: 1fr;
+  }
+  .block-section {
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+  }
+  .big-block {
+    padding: 100px 0;
+  }
+}
