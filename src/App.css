@@ -260,6 +260,9 @@ p {
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr;
   }
+  .top-container {
+    display: none;
+  }
   .Project-block,
   .Technologies-block {
     border-top: 1px solid rgba(255, 255, 255, 0.4);
@@ -269,6 +272,9 @@ p {
   .block-container {
     grid-template-rows: 1fr;
     grid-template-columns: 1fr;
+  }
+  .top-container {
+    display: none;
   }
   .project-container {
     grid-template-rows: 1fr;

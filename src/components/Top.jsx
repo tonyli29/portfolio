@@ -6,7 +6,7 @@ const Top = props => {
       <div className="filler top-about"></div>
       <div className="top-right">
         <div className="filler top-project">Projects</div>
-        <div className="filler top-other">Hi</div>
+        <div className="filler top-other">Placeholder</div>
       </div>
     </div>
   );
